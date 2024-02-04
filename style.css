@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Proza Libre", Arial, sans-serif;
+    background-color: #f7f0f5; /* Colore crema tenue per lo sfondo */
+    color: #433633;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    text-align: center;
+    background-color: #f7f0f5; /* Mantenuto lo stesso colore per il contenitore */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.title {
+    font-family: "Kaushan Script", cursive;
+    font-size: 28px;
+    margin-bottom: 30px; /* Aggiunto margin dopo "It's my birthday!" */
+    position: relative;
+}
+
+.title::before,
+.title::after {
+    content: "";
+    display: block;
+    height: 1px;
+    background-color: #5c5552; /* Colore della riga sottile */
+    position: absolute;
+    left: 20px; /* Margin a sinistra del testo */
+    right: 20px; /* Margin a destra del testo */
+}
+
+.title::before {
+    top: -5px; /* Distanza dalla parte superiore del testo */
+}
+
+.title::after {
+    bottom: -5px; /* Distanza dalla parte inferiore del testo */
+}
+
+.center-top {
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+    max-width: calc(100% - 40px); /* Larghezza massima con margini di 20px a destra e 20px a sinistra */
+}
+
+.text {
+    text-align: justify;
+    margin-top: 20px;
+    margin-left: 20px; /* Aggiunto margin a sinistra */
+    margin-right: 20px; /* Aggiunto margin a destra */
+    color: #5c5552;
+    font-size: 14px;
+}
+
+.additional-text {
+    text-align: left;
+    font-style: italic;
+    margin-top: 10px; /* Spazio sopra il testo aggiuntivo */
+    margin-left: 20px; /* Aggiunto margin a sinistra */
+    color: #5c5552;
+    font-size: 14px;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+}
